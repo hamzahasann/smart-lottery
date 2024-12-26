@@ -1,0 +1,113 @@
+/* Container Styles */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d1d5db, #e5e7eb, #f3f4f6);
+    padding: 1.5rem;
+  }
+  
+  /* Card Styles */
+  .card {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+  }
+  
+  /* Title Styles */
+  .title {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 600;   /* Equivalent to font-semibold */
+    color: #1f2937;     /* Equivalent to text-gray-800 */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+    text-align: center;
+  }
+  
+  /* Information Section */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Equivalent to space-y-3 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+  }
+  
+  .label {
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #1f2937; /* Equivalent to text-gray-800 */
+  }
+  
+  /* Button Container */
+  .button-container {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Winner and Not-Winner Messages */
+  .winner-message {
+    margin-bottom: 0.5rem;
+    color: #10b981; /* Equivalent to text-green-600 */
+    font-weight: 600; /* Equivalent to font-semibold */
+  }
+  
+  .not-winner-message {
+    color: #4b5563; /* Equivalent to text-gray-700 */
+    font-weight: 500; /* Equivalent to font-medium */
+  }
+  
+  /* Button Styles */
+  .button {
+    padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+    border: 2px solid; /* Equivalent to border */
+    border-radius: 0.375rem; /* Equivalent to rounded */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Enter Lottery Button */
+  .enter-button {
+    background: linear-gradient(to bottom, #bfdbfe, #93c5fd); /* Equivalent to bg-gradient-to-b from-blue-200 to-blue-400 */
+    border-color: #3b82f6; /* Equivalent to border-blue-500 */
+    color: #1e3a8a; /* Equivalent to text-blue-900 */
+  }
+  
+  .enter-button:hover {
+    background: linear-gradient(to bottom, #93c5fd, #60a5fa); /* Equivalent to hover:from-blue-300 to-blue-500 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to hover:shadow-md */
+  }
+  
+  /* Claim Prize Button */
+  .claim-button {
+    background: linear-gradient(to bottom, #bbf7d0, #86efac); /* Equivalent to bg-gradient-to-b from-green-200 to-green-400 */
+    border-color: #22c55e; /* Equivalent to border-green-500 */
+    color: #166534; /* Equivalent to text-green-900 */
+  }
+  
+  .claim-button:hover {
+    background: linear-gradient(to bottom, #86efac, #4ade80); /* Equivalent to hover:from-green-300 to-green-500 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to hover:shadow-md */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .card {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 1.25rem;
+    }
+  
+    .button {
+      width: 100%;
+    }
+  }
+  
